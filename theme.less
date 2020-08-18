@@ -1,0 +1,369 @@
+/*
+# DW Raven Theme - by LCweb
+#
+# @version 1.0 - 18/08/2020 
+# @author Luca Montanari (aka LCweb) (https://www.lcweb.it)
+#
+# https://github.com/LCweb-ita/Brackets-DW-Raven-theme
+#
+# Copyright 2020, All rights reserved
+# Code licensed under the MIT license
+*/
+
+
+@background: #232323;
+@foreground: #DDD;
+@comments: #848484;
+@blue: #83b2e0;
+@green: #87d68b;
+@purple: #8e6cce;
+@beige: #E7A67B;
+@red: #DD6667;
+@yellow: #e2c15b;
+@orange: #d99450;
+
+
+
+.cm-bracket,
+.cm-keyword,
+.cm-tag,
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+	color: @blue;
+}
+.cm-atom,
+.cm-number {
+	color: @red;
+}
+
+.cm-link {
+	color: @foreground;
+	text-decoration: none;
+}
+
+.cm-operator,
+.cm-variable,
+.cm-variable-3 {
+	color: @foreground;
+}
+
+.cm-attribute,
+.cm-builtin,
+.cm-meta,
+.cm-qualifier {
+	color: @blue;
+}
+
+.cm-string,
+.cm-string-2 {
+	color: @yellow;
+}
+
+.cm-property,
+.cm-variable-2 {
+	color: @beige;
+}
+
+.cm-comment {
+	color: @comments;
+}
+
+.cm-def {
+	color: @orange;
+}
+.cm-matchhighlight {
+	background: #333;
+}
+
+
+
+
+
+/******* GENERAL EDITOR LAYOUT ********/
+.CodeMirror {
+	line-height: 1.4;
+    //font-family: "Source Code Pro", "SourceCodePro-Medium", "MS Gothic", monospace;
+}
+
+.CodeMirror,
+.CodeMirror-scroll {
+	background-color: @background;
+	color: @foreground;
+}
+.CodeMirror-scroll {
+    padding-left: 5px;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: @background;
+}
+.CodeMirror-gutter {
+    background: rgba(255, 255, 255, .04);
+    
+}
+.CodeMirror-focused .CodeMirror-activeline {
+	.CodeMirror-gutter-elt {
+		background: rgba(255, 255, 255, .14);
+		color: @foreground;
+	}
+	.inline-widget .CodeMirror-gutter-elt {
+		color: @comments;
+	}
+}
+
+.CodeMirror .CodeMirror-gutters {
+	background: transparent;
+	border-right: none;
+}
+
+.CodeMirror-linenumber {
+	color: #a6a6a6;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	color: #F8F8F2;
+}
+
+.CodeMirror-cursor {
+	border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror-selected {
+	background: rgba(0, 103, 155, .7);
+	transition: all 360ms ease;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+	background: #00679B;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+	background-color: #00679B;
+	color: #fff !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+	border-left: none!important;
+	border-bottom: 1px solid @foreground;
+	width: 1.2ex;
+}
+
+.CodeMirror-searching {
+	background: #ffe497;
+}
+
+.searching-current-match {
+	background: #ffc41d;
+}
+
+.ico-cssColorPreview {
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	margin-bottom: 2px;
+}
+
+.brackets-git-gutter-added,
+.brackets-git-gutter-modified,
+.brackets-git-gutter-removed {
+	width: 3px;
+}
+
+
+
+
+
+/************ XML ************/
+.cm-m-xml {
+	color: @foreground;
+}
+
+.cm-m-xml.cm-comment {
+	color: @comments;
+}
+
+.cm-m-xml.cm-tag {
+	color: @blue;
+}
+
+.cm-m-xml.cm-attribute {
+	color: @foreground;
+}
+
+.cm-m-xml.cm-string {
+	color: @yellow;
+}
+
+.cm-m-xml.cm-bracket {
+	color: @blue;
+}
+
+
+
+
+/******* OTHER LANGUAGES *******/
+.cm-meta,
+.cm-m-clike.cm-meta {
+	color: @purple;
+}
+
+.cm-m-clike {
+	color: @foreground;
+}
+
+.cm-m-clike.cm-keyword,
+.cm-m-clike.cm-atom {
+	color: @green;
+}
+
+.cm-m-clike.cm-builtin {
+	color: @blue;
+}
+
+.cm-m-clike.cm-string {
+	color: @yellow;
+}
+
+.cm-m-clike.cm-comment {
+	color: @comments;
+}
+
+.cm-m-clike.cm-variable-2 {
+	color: @orange;
+}
+
+.cm-m-clike.cm-operator,
+.cm-m-clike.cm-bracket,
+.cm-m-clike.cm-variable {
+	color: @foreground;
+}
+
+.cm-m-clike.cm-number {
+	color: @red;
+}
+
+
+
+
+
+
+/************ JAVASCRIPT ************/
+.cm-m-javascript,
+.cm-m-javascript.cm-operator {
+	color: @foreground;
+}
+
+.cm-m-javascript.cm-comment {
+	color: @comments;
+}
+.cm-m-javascript.cm-meta {
+	color: @purple;
+}
+
+.cm-m-javascript.cm-variable,
+.cm-m-javascript.cm-variable-2 {
+	color: @foreground;
+}
+
+.cm-m-javascript.cm-variable-3 {
+	color: #E58443;
+}
+
+.cm-m-javascript.cm-string {
+	color: @yellow;
+}
+
+.cm-m-javascript.cm-string-2,
+.cm-m-javascript.cm-def,
+.cm-m-javascript.cm-property {
+	color: @foreground;
+}
+.cm-m-javascript.cm-keyword, 
+.cm-m-javascript.cm-atom {
+	color: @green;
+}
+.cm-m-javascript.cm-number {
+	color: @red;
+}
+
+
+
+
+
+/************ CSS ************/
+.cm-m-css {
+	color: @blue;
+}
+
+.cm-m-css.cm-atom,
+.cm-m-css.cm-hr {
+	color: @red;
+}
+
+.cm-m-css.cm-string,
+.cm-m-css.cm-string-2 {
+	color: @blue;
+}
+
+.cm-m-css.cm-variable,
+.cm-m-css.cm-number,
+.cm-m-css.cm-attribute,
+.cm-m-css.cm-plus {
+	color: @red;
+}
+.cm-m-css.cm-attribute {
+    color: @purple;
+}
+
+.cm-m-css.cm-keyword {
+	color: #E58443 !important;
+}
+
+.cm-m-css.cm-meta,
+.cm-m-css.cm-property {
+	color: @beige;
+}
+.cm-m-css.cm-def {
+    color: @purple;
+}
+
+.cm-m-css.cm-variable-2 {
+    color: @foreground;
+}
+.cm-m-css.cm-variable-3 {
+	color: @blue;
+}
+
+.cm-m-css.cm-variable-4 {
+	color: #E58443;
+}
+
+.cm-m-css.cm-operator,
+.cm-m-css.cm-bracket {
+	color: @foreground;
+}
+
+.cm-m-css.cm-comment {
+	color: @comments;
+}
+
+.cm-m-css.cm-error,
+.cm-m-css.cm-minus {
+	color: @red;
+}
+
+.cm-m-css.cm-link {
+	color: @yellow;
+}
+
+.cm-m-css.cm-rangeinfo {
+	color: @yellow;
+}
+
+.cm-m-css.cm-keyword,
+.cm-m-css.cm-qualifier,
+.cm-m-css.cm-builtin,
+.cm-m-css.cm-tag,
+.cm-m-css.cm-quote {
+	color: @blue;
+}

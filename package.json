@@ -1,0 +1,15 @@
+{
+    "name": "dw-raven-by-lcweb",
+    "title": "DW Raven by LCweb",
+    "description": "Dark theme matching Adobe Dreamweaver's Raven (2014 version). Contrast set to be gentle on your eyes even after ages on codes",
+    "homepage": "https://github.com/LCweb-ita/Brackets-DW-Raven-theme",
+    "version": "1.0.0",
+    "author": "Luca Montanari (aka LCweb) (http://www.lcweb.it)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["dreamweaver", "raven", "dark", "theme", "flat", "php", "css", "javascript"]
+}
