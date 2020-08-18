@@ -28,4 +28,4 @@ Hope you enjoy it as I do!
 
 
 ## Copyright and License
-Copyright &copy 2020 [Luca Montanari (aka LCweb)](http://www.lcweb.it). Released under the [MIT License](LICENSE).
+Copyright &copy; 2020 [Luca Montanari (aka LCweb)](http://www.lcweb.it). Released under the [MIT License](LICENSE).
